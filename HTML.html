@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignSpeak - Empowering Voices Through Vision</title>
+
+  <!-- ฟอนต์จาก Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ลิงก์ไปยังไฟล์ CSS -->
+  <link rel="stylesheet" href="/CSSS/css.css">
+
+  <link rel="stylesheet" href="/robots.txt">
+   
+  <!-- สำหรับ model-viewer -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <title>NovaGen</title>
+<meta name="description" content="คำอธิบายสั้นๆ ว่าเว็บนี้เกี่ยวกับอะไร">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="google-site-verification" content="BFPB91x7uK46awdP70xnE-I4pBY85mVnVk4N8UYztDU" />
+
+
+</head>
+
+</head>
+<body>
+
+  <!-- ส่วนหัวของเว็บ -->
+  <header>
+    <h1>SignSpeak</h1>
+    <p>เทคโนโลยีที่เปลี่ยนมือเป็นเสียง เติมเต็มการสื่อสารให้ทุกชีวิตมีเสียง</p>
+  </header>
+
+  <!-- เมนูนำทางแบบ sticky -->
+  <nav>
+    <a href="#" onclick="showPage('home')">หน้าแรก</a>
+    <a href="#" onclick="showPage('principle')">หลักการทำงาน</a>
+    <a href="#" onclick="showPage('components')">อุปกรณ์</a>
+    <a href="#" onclick="showPage('usage')">วิธีการใช้งาน</a>
+    <a href="#" onclick="showPage('benefits')">ประโยชน์</a>
+    <a href="#" onclick="showPage('future')">อนาคต</a>
+    <a href="#" onclick="showPage('model3d')">ภาพ 3D อุปกรณ์</a>
+
+  </nav>
+
+  <!-- เนื้อหาแต่ละหน้า -->
+  <div class="container">
+
+    <!-- หน้า: หน้าแรก -->
+    <section id="home" class="page active">
+      
+      <h2>แนวคิดและวัตถุประสงค์</h2>
+      <p>SignSpeak คือโครงการที่ออกแบบมาเพื่อแก้ปัญหาการสื่อสารของผู้พิการทางการได้ยินและการพูด...</p>
+      <div class="highlight">
+        "เสียงที่แท้จริง... ไม่ได้อยู่ที่ปาก แต่อยู่ที่ ใจที่อยากสื่อสาร"
+      </div>
+    </section>
+
+    <!-- หน้า: หลักการทำงาน -->
+    <section id="principle" class="page">
+      <h2>หลักการทำงาน</h2>
+      <p>SignSpeak ทำงานโดยใช้กล้อง Pi Camera ที่ตรวจจับมือของผู้ใช้งาน...</p>
+    </section>
+
+    <!-- หน้า: รายการอุปกรณ์ -->
+    <section id="components" class="page">
+  <h2>รายการของที่ต้องซื้อ</h2>
+
+  <div class="table-wrapper">
+    <table class="device-table">
+      <thead>
+        <tr>
+          <th>ลำดับ</th>
+          <th>รายการ</th>
+          <th>ประเภท</th>
+          <th>หมายเหตุ</th>
+          <th>ราคาประมาณ (บาท)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Raspberry Pi 4 (4GB)</td>
+          <td>บอร์ดหลัก</td>
+          <td>รัน Python/MediaPipe</td>
+          <td>2,000–2,500</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>MicroSD Card (32GB)</td>
+          <td>หน่วยความจำ</td>
+          <td>ติดตั้งระบบ</td>
+          <td>250–400</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>กล้อง USB / Pi Camera V2</td>
+          <td>ตรวจจับมือ</td>
+          <td>กล้องต่อกับ Pi</td>
+          <td>300–800</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>ลำโพง 3.5mm หรือ USB</td>
+          <td>แสดงเสียงพูด</td>
+          <td>เสียงผ่าน Pi ได้เลย</td>
+          <td>200–500</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Power Bank 5V 2A+</td>
+          <td>จ่ายไฟ</td>
+          <td>ใช้แทนหม้อแปลง</td>
+          <td>300–500</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>กล่องใส่บอร์ด</td>
+          <td>ปกป้องอุปกรณ์</td>
+          <td>พกพาได้</td>
+          <td>50–200</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>(เสริม) จอ OLED / LCD</td>
+          <td>แสดงข้อความ</td>
+          <td>I2C interface</td>
+          <td>150–300</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="table-note">
+      <span class="highlight-box"></span> รวมงบประมาณ: ประมาณ <strong>3,500–4,500 บาท</strong> (ขึ้นกับอุปกรณ์เสริม)
+    </div>
+  </div>
+</section>
+
+    <!-- หน้า: วิธีการใช้งาน -->
+    <section id="usage" class="page">
+      <h2>วิธีการใช้งานอุปกรณ์</h2>
+      <ol>
+        <li>เปิดสวิตช์หรือเชื่อมต่อ Power Bank เข้ากับ Raspberry Pi</li>
+        <li>รอระบบบูทอัตโนมัติ (ประมาณ 10 วินาที)</li>
+        <li>กล้องจะเริ่มตรวจจับมือโดยอัตโนมัติผ่าน MediaPipe</li>
+        <li>ทำภาษามือในรูปแบบที่ระบบรองรับ (เช่น ✋ = “สวัสดีครับ”)</li>
+        <li>ข้อความจะแสดงผลบนหน้าจอ OLED และเสียงจะออกทางลำโพง</li>
+        <li>หากต้องการเปลี่ยนคำ ให้หยุดนิ่งชั่วครู่แล้วเปลี่ยนท่าทางมือใหม่</li>
+        <li>ปิดเครื่องโดยถอดสาย Power Bank ออกเมื่อไม่ใช้งาน</li>
+      </ol>
+    </section>
+
+    <!-- หน้า: ประโยชน์ -->
+    <section id="benefits" class="page">
+      <h2>ประโยชน์</h2>
+      <ul>
+        <li>ช่วยให้ผู้พิการสามารถสื่อสารกับบุคคลทั่วไปได้อย่างอิสระ</li>
+        <li>ลดการพึ่งพาล่ามภาษามือหรือบุคคลที่สาม</li>
+        <li>เสริมสร้างความมั่นใจให้ผู้ใช้งานในการเข้าสังคม</li>
+        <li>ช่วยให้เข้าถึงบริการสาธารณะ เช่น การแพทย์ การขนส่ง หรือสถานที่ราชการได้ง่ายขึ้น</li>
+        <li>ช่วยให้คนทั่วไปเข้าใจและเห็นถึงศักยภาพของผู้พิการ</li>
+      </ul>
+    </section>
+
+    <section id="future" class="page">
+      <h2>การพัฒนาในอนาคต</h2>
+      <p>เป้าหมายในระยะยาวของเราคือการเพิ่มความสามารถของระบบให้สามารถแปลภาษามือได้ทั้งประโยค...</p>
+    </section>
+    
+    <section id="model3d" class="page">
+     <h2>ภาพ 3D ของอุปกรณ์</h2>
+     <p>คุณสามารถดูและหมุนอุปกรณ์ต้นแบบของโปรเจกต์ SignSpeak ได้จากภาพด้านล่างนี้:</p>
+     <model-viewer src="/imge/Smooth Snaget-Kup (2).glb" alt="โมเดลอุปกรณ์ SignSpeak" auto-rotate camera-controls ar shadow-intensity="1" style="width: 100%; height: 500px; background-color: #fff; border-radius: 1rem;">
+     </model-viewer>
+     <p style="margin-top: 1rem; font-style: italic;">* หมุน/ซูมโมเดลด้วยเมาส์ หรือใช้นิ้วเลื่อนหากใช้มือถือ</p>
+    </section>
+
+   
+  </div>
+
+  <!-- ส่วนท้ายของเว็บ -->
+  <footer>
+    &copy; 2025 SignSpeak - Empowering the Silent to Speak
+  </footer>
+
+  <!-- สคริปต์สำหรับเปลี่ยนหน้า -->
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => {
+        p.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+
+</body>
+</html>
+
